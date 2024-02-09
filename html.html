@@ -1,0 +1,63 @@
+<html>
+
+<head>
+<!--设置网页编码-->
+<meta charset = "UTF-8"> 
+<!--定义默认链接地址-->
+<base href="http://www.zjxbirth.com/"target="_blank">
+<!--文档标题-->
+<title>Happy Birthday</title>
+<style>
+  .box{
+  width: 600px;
+  height: 1200px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  }
+</style>
+<style>
+	.login{
+            width:350px;
+            height:200px;
+            position:absolute;
+            left:48%;
+            top:50%;
+            margin-left:-150px;
+            margin-top:-100px;
+ 
+}
+</style>
+</head>
+
+<body>
+    <!--二级标题-->
+    <div class="box">
+    <br/>
+    <br/>
+    <h2>Wuli Zhou Juajua </h2>
+    <h2>Happy Birthday！</h2>
+    <br/>
+    <div class="login">
+    <label>name：</label><br>
+    <input id="name"><br>
+    <label>birth day：</label><br>
+    <input id="password" type="password"><br/>
+    <br/>
+    <button onclick="myFunction()">进入</button>
+    </div>
+    <script>
+        function myFunction() {
+          var i,j;
+        i="0101";
+        j=document.getElementById("password").value;
+        if(j==i){location.href="http://127.0.0.1:5500/cake.html";}
+        else{alert("Password Failed!Please Input Again!");}
+        }
+    </script>
+    </body>
+    
+    </html>
